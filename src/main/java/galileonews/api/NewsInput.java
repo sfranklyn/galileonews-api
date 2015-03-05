@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-public class NewsXML {
+public class NewsInput {
 
     private String userName;
     private String password;
@@ -34,6 +34,16 @@ public class NewsXML {
     private String signon;
     private Boolean important;
     private Boolean ascending;
+
+    public NewsInput() {
+        userName = "";
+        password = "";
+        pcc = "";
+        gtid = "";
+        signon = "";
+        important = Boolean.FALSE;
+        ascending = Boolean.FALSE;
+    }
 
     public String getUserName() {
         return userName;
