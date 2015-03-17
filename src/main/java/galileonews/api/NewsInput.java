@@ -15,6 +15,7 @@
  */
 package galileonews.api;
 
+import java.util.Date;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -34,6 +35,7 @@ public class NewsInput {
     private String signon;
     private Boolean important;
     private Boolean ascending;
+    private Date today;
 
     public NewsInput() {
         userName = "";
@@ -43,6 +45,7 @@ public class NewsInput {
         signon = "";
         important = Boolean.FALSE;
         ascending = Boolean.FALSE;
+        today = null;
     }
 
     public String getUserName() {
@@ -99,6 +102,14 @@ public class NewsInput {
 
     public void setAscending(Boolean ascending) {
         this.ascending = ascending;
+    }
+
+    public Date getToday() {
+        return today;
+    }
+
+    public void setToday(Date today) {
+        this.today = today;
     }
 
 }
