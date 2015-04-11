@@ -45,7 +45,7 @@ public class NewsInput {
         signon = "";
         important = Boolean.FALSE;
         ascending = Boolean.FALSE;
-        today = null;
+        today = new Date();
     }
 
     public String getUserName() {
