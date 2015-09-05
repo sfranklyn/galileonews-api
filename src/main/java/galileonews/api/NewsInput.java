@@ -43,8 +43,8 @@ public class NewsInput {
         pcc = "";
         gtid = "";
         signon = "";
-        important = Boolean.FALSE;
-        ascending = Boolean.TRUE;
+        important = null;
+        ascending = null;
         today = new Date();
     }
 
